@@ -1,9 +1,19 @@
 import React from 'react'
 
+import image from "../notfound.png"; 
+ 
 export default function noPage() {
+  const mystyle={
+    backgroundImage:`url(${image})`,
+    backgroundSize: 'contain',
+    backgroundRepeat: 'no-repeat',
+    height:'900px'
+  }
   return (
-    <>
-      <h1>404 Not Found</h1>
-    </>
+    
+    <div style={mystyle}>
+
+    </div>
+   
   )
 }
